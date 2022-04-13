@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+ /* body{
+     background: url(..//src/assets/bg.jpg) top center no-repeat fixed; 
+}  */
+
+header{
+    font-family: 'Cormorant', serif;
+}
+
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+
+

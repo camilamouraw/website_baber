@@ -1,0 +1,153 @@
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <h1 class="logo"><a href="index.html" class="sem-underline"> <img src="./../assets/logo.png" alt="">
+        Mister Madruga</a></h1>
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+        <li><a class="nav-link scrollto" href="#quem">Quem Somos</a></li>
+        <li><a class="nav-link scrollto" href="#servico">Serviços</a></li>
+        <li><a class="nav-link scrollto " href="#agenda">Agenda</a></li>
+      </ul>
+      <i class="fa-solid fa-bars mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+  </div>
+
+</header>
+<!-- End Header -->
+
+<div id="home" class="container-fluid p-0">
+  <!-- INICIO CARROSSEL -->
+  <div class="carrossel">
+    <ul class="p-0">
+      <li>
+        <img src="../assets/carrossel1.jpg" alt="imgCarrossel1">
+      </li>
+
+      <li>
+        <img src="../assets/carrossel2.jpg" alt="imgCarrossel2">
+      </li>
+
+      <li>
+        <img src="../assets/carrossel3.jpg" alt="imgCarrossel3">
+      </li>
+
+    </ul>
+
+  </div>
+  <!-- FIM CARROSSEL -->
+</div>
+
+
+<!-- ======= About Section ======= -->
+<section class="about container-fluid">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-6 bg-black py-5 " data-aos="fade-left">
+        <a class="anchor" id="quem"></a>
+        Quem Somos
+        <h5>
+          Somos a barbearia Mr.Madruga, um local especializado em cortes de cabelo e barba de alto padrão, com produtos
+          e materiais de ótima qualidade.
+          <br>
+          <br>
+          Nossa equipe, inclui especialistas na área de cortes masculinos que foram desenvolvidos e aprimorados pela
+          nossa barbearia para agradar todos os nossos clientes.
+          <br>
+          <br>
+          Nosso objetivo é oferecer para você um excelente serviço, onde você possa sair satisfeito com seu visual.
+        </h5>
+      </div>
+      <div class="col-lg-6 py-5" data-aos="fade-left"></div>
+      <div class="col-lg-6 py-5" data-aos="fade-left"></div>
+
+      <div class="col-lg-6 bg-black py-5" data-aos="fade-left">
+        <a class="anchor" id="servico"></a>
+        Serviços
+        <h5>
+          Nossa barbearia disponibiliza serviços de corte de cabelo e barba,
+          com profissionais qualificados que podem indicar os melhores desenhos de cortes para melhorar seu estilo.
+          <br>
+          <br>
+          <li>
+            Corte barba: Oferecemos manutenção do desenho, hidratação, esfoliação e camuflagem de fios branco.
+          </li>
+          <br>
+          <li>
+            Corte cabelo: Serviço de corte com tesoura ou máquina, cobertura de fios brancos, hidratação e penteados.
+          </li>
+          <br>
+          Agende já seu horário e garanta o visual desejado!
+        </h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-6 order-1 order-lg-2 h-100 bg-black" id="agenda" data-aos="fade-left">
+          Agenda barbearia
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Serviço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let c of fila; let i = index">
+              <th scope="row">{{i+1}}</th>
+              <td>{{c.cliente}}</td>
+              <td>{{c.servico == 0 ? 'Cabelo' : (c.servico == 1 ? 'Barba' : 'Combo') }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End About Section -->
+
+<main id="main" class="container-fluid p-0">
+
+  <!--Rodapé-->
+  <footer class="rodape-prin">
+    <ul class="icones-sociais">
+      <p>BARBEARIA Mr.M</p>
+    <br>
+      <img src="../assets/redes.png" alt="icones" class="img-rodape">
+
+      <br>
+      <br>
+
+      <h6>
+        Contato:
+      </h6>
+
+      <p>
+        Telefone: (15) 4002-8922
+      </p>
+      <p>
+        Email: mistermadruga@gmail.com
+      </p>
+
+    &copy;
+
+    <br>
+    Criadoras:
+    <br>
+    Camila Moura
+    <br>
+    Camily Lima
+    <br>
+
+    </ul>
+  </footer>
+</main>
